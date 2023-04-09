@@ -1,0 +1,16 @@
+[development]
+key = "development value"
+SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:85598077@localhost/sistema"
+SECRET_KEY='CDAECEFSWVRSVVS'
+TITLE='MY APP'
+#FLASK_ADMIN_SWATCH='slate'
+EXTENSIONS=[
+	'my_app.ext.database',
+	'my_app.ext.auth',
+	'my_app.ext.admin',
+	'my_app.blueprints.webui'
+]
+
+[production]
+key = "production value"
+SQLALCHEMY_DB_URI = "postgresql://..."
